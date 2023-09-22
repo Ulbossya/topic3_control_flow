@@ -1,0 +1,335 @@
+// [Task 1]
+// Дано двузначное число. Определить:
+// а) входят ли в него цифры 4 или 7;
+// б) входят ли в него цифры 3, 6 или 9.
+// в) входит ли в него цифра а.
+
+
+// a)
+// void main() {
+//   int a = 45;
+//   int b1 = a % 10;
+//   int b2 = a ~/ 10;
+//   if (b1 == 4 || b2 == 4) {
+//     print("4 shygady");
+//   } else if (b1 == 7 || b2 == 7) {
+//     print("7 shygady");
+//   } else {
+//     print("4 te 7 de shyqpaidy");
+//   }
+// }
+
+// b)
+// void main(){
+//   int a = 36;
+//   int b1 = a %10;
+//   int b2 = a ~/ 10;
+//   if (b1 == 3 || b2 == 3) {
+//     print("3 shygady");
+//   } else if (b1 == 6 || b2 == 6) {
+//     print("6 shygady");
+//   } else if (b1 == 9 || b2 == 9) {
+//     print("9 shygady");
+//   } else {
+//     print("3,6,9 shyqpaidy");
+//   }
+// }
+
+// b2)
+// void main(){
+//   int san = 45;
+//   int b1 = san %10;
+//   int b2 = san ~/ 10;
+//   int a = 4;
+//   if(b1 == a || b2 == a ) {
+//     print("a shygady");
+//   }
+//   else{
+//     print("a shyqpaidy");
+//   }
+// }
+
+
+
+
+// [Task 2]
+// Дано трехзначное число. Определить:
+// а) входят ли в него цифры 4 или 7;
+// б) входят ли в него цифры 3, 6 или 9.
+// в) входит ли в него цифра n.
+
+// void main(){
+//   int san = 786;
+//   int b1 = san ~/ 100;
+//   int b2 = (san ~/ 10) % 10;
+//   int b3 = san % 10;
+//   if(b1 == 4 || b2 == 4 || b3 == 4){
+//     print("4 shygady");
+//   }
+//   else if(b1 == 7 || b2 == 7 || b3 == 7){
+//     print("7 shygady");
+//   } else{
+//     print("4,7 shyqpaidy");
+//   }
+// }
+
+// void main(){
+//   int san = 561;
+//   int b1 = san ~/ 100;
+//   int b2 = (san ~/ 10) % 10;
+//   int b3 = san % 10;
+//   if(b1 == 3 || b2 == 3 || b3 == 3){
+//     print("3 shygady");
+//   } else if(b1 == 6 || b2 == 6 || b3 == 6){
+//     print("6 shygady");
+//   } else if(b1 == 9 || b2 == 9 || b3 == 9){
+//     print("9 shygady");
+//   } else{
+//     print("3,6,9 shyqpaidy");
+//   }
+// }
+
+
+
+
+
+
+// [Task 3]
+// Дано натуральное число n (n 9999). Выяснить, является ли оно палиндромом
+// ("перевертышем") с учетом четырех цифр, как, например, числа 7777, 8338,
+// 0330 и т. п. (Палиндромом называется число, десятичная запись которого чи-
+// тается одинаково слева направо и справа налево.)
+// void main(){
+//   int san = 2332;
+//   int b1 = san ~/ 1000;
+//   int b2 = (san ~/ 100) % 10;
+//   int b3 = (san ~/  10) % 10;
+//   int b4 = san % 10;
+//   if (b1 == b4 && b2 == b3){
+//     print("palindrom");
+//   }
+//   else {
+//     print("palindrom emes");
+//   }
+// }
+
+// [Task 4]
+//  Дано натуральное число n (n 9999). Выяснить, верно ли, что это число со-
+// держит ровно три одинаковые цифры с учетом четырех цифр, как, например,
+// числа 3363, 4844, 0300
+// void main() {
+//   int san = 7789;
+//   int b1 = san ~/ 1000;
+//   int b2 = (san ~/ 100) % 10;
+//   int b3 = (san ~/ 10) % 10;
+//   int b4 = san % 10;
+//   if ((b1 == b2 && b1 == b3) ||
+//       (b1 == b2 && b1 == b4) ||
+//       (b1 == b4 && b1 == b3)) {
+//     print(" 3 одинаковый бар");
+//   } else {
+//     print(" 3 одинаковый жок");
+//   }
+// }
+
+
+// [Task 5]
+//  Определить, является ли заданное шестизначное число счастливым. (Счаст-
+// ливым называют такое шестизначное число, что сумма его первых трех цифр
+// равна сумме его последних трех цифр.) 
+// void main() {
+//   int san = 987654;
+//   int b1 = san ~/ 100000;
+//   int b2 = (san ~/ 10000) % 10;
+//   int b3 = (san ~/ 1000) % 10;
+//   int b4 = (san ~/ 100) % 10;
+//   int b5 = (san ~/ 10) % 10;
+//   int b6 = san % 10;
+//   int summa1 = b1 + b2 + b3;
+//   int summa2 = b4 + b5 + b6;
+//   if (summa1 == summa2) {
+//     print("durys");
+//   } else {
+//     print("qate");
+//   }
+// }
+
+// [Task 6]
+//  Найти:
+// а) сумму всех целых чисел от 100 до 500;
+// void main() {
+//   int bastapqy = 100;
+//   int songy = 500;
+//   int qosyndy = 0;
+
+//   for (int i = bastapqy; i <= songy; i++) {
+//     qosyndy += i;
+//   }
+
+//   print(" $bastapqy : $songy: $qosyndy");
+// }
+
+
+
+
+// [Task 7]
+// Найти:
+// а) среднее арифметическое всех целых чисел от 1 до 1000;
+// б) среднее арифметическое всех целых чисел от a до b (значения a и b вводят-
+// ся с клавиатуры; b a).
+
+// void main() {
+//   int a = 0;
+//   int sum = 0;
+//   for (int i = 1; i < 1001; i++) {
+//     sum = a + i;
+//     a+=1;
+   
+//   }
+//    double sredniArif= sum/a;
+//     print(sredniArif);
+// }
+
+
+//To read an integer from console in Dart, first read a line from console using stdin.readLineSync() method, and then convert this line (string) into an integer using int.parse() method.
+// void main() {
+//   int b1 = int.parse(stdin.readLineSync()!);
+//   int b2 = int.parse(stdin.readLineSync()!);
+//   int sum = 0;
+//   for (int i = b1; i <= b2; i++) {
+//     sum += i;
+//   }
+//   var mean = sum / b2;
+//   print(mean);
+// }
+
+
+
+// [Task 9]
+// Дано натуральное число. Определить:
+// а) количество цифр 3 в нем;
+// б) сколько раз в нем встречается последняя цифра;
+// в) количество четных цифр в нем. Составное условие и более одного неполно-
+// го условного оператора не использовать;
+// г) сумму его цифр, больших пяти;
+// д) произведение его цифр, больших семи;
+// е) сколько раз в нем встречаются цифры 0 и 5 (всего)
+
+// void main() {
+//   int a = 734;
+//   String b = a.toString();
+//   if (b.contains("3")) {
+//     print("3 sany bar");
+//   } else {
+//     print("3 sany jok");
+//   }
+// }
+
+// void main() {
+//   int a = 456789;
+//   int b = a % 10;
+//   String str = a.toString();
+//   int counter = 0;
+//   for (int i = 0; i < str.length; i++) {
+//     if (str[i] == b.toString()) {
+//       counter += 1;
+//     } else {
+//       counter += 0;
+//     }
+//   }
+//   print(counter);
+// }
+
+// void main() {
+//   int a = 78789;
+//   var strin = a.toString();
+//   int counter = 0;
+//   int b = 0;
+//   for (int i = 0; i < strin.length; i++) {
+//     var digit = a % 10;
+//     a ~/= 10;
+//     b = digit;
+//     if (b >= 5) {
+//       counter += b;
+//     } else {
+//       counter += 0;
+//     }
+//   }
+//   print(counter);
+// }
+
+
+
+// void main() {
+//   int a = 1234567;
+//   var strin = a.toString();
+//   int counter = 1;
+//   int b = 1;
+//   for (int i = 0; i < strin.length; i++) {
+//     var digit = a % 10;
+//     a ~/= 10;
+//     b = digit;
+//     if (b >= 7) {
+//       counter *= b;
+//     } else {
+//       counter += 0;
+//     }
+//   }
+//   print(counter);
+// }
+
+
+
+// void main() {
+//   int a = 3333345;
+//   var strin = a.toString();
+//   int counter = 0;
+//   int san = 0;
+//   for (int i = 0; i < strin.length; i++) {
+//     var digit = a % 10;
+//     a ~/= 10;
+//     san = digit;
+//     if (san == 5) {
+//       counter++;
+//     }
+//     if (san == 0) {
+//       counter++;
+//     } else {
+//       counter += 0;
+//     }
+//   }
+//   print(counter);
+// }
+
+
+// [Task 10]
+// Дана непустая последовательность целых чисел, оканчивающаяся нулем.
+// Найти:
+// а) сумму всех чисел последовательности, больших числа x;
+// б) количество всех четных чисел последовательности
+
+// void main() {
+//   int x;
+//   int sumGreaterX = 0;
+//   int countEvenNumbers = 0;
+
+//   print("Введите число x:");
+//   x = int.parse(stdin.readLineSync()!);
+
+//   print(": ");
+//   int number;
+//   do {
+//     number = int.parse(stdin.readLineSync()!);
+    
+//     if (number % 2 == 0) {
+//       countEvenNumbers++;
+//     }
+
+//     if (number > x) {
+//       sumGreaterX += number;
+//     }
+//   } while (number != 0);
+
+//   print(" $sumGreaterX");
+//   print(" $countEvenNumbers");
+// }
